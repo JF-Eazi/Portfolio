@@ -4,8 +4,37 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     background-image: radial-gradient(#1F4690, #3A5BA0);
+}
+
+.menubar-container {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 5%;
+    position: relative;
+        top: 25%;
+}
+
+.menubar1 {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.menubar2 {
+    position: relative;
+        bottom: 100%;
+        left: 50%;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
 }
 
 #page1_div1 {
@@ -23,6 +52,12 @@ h1 {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     font-size:xxx-large;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
 }
 
 p {
