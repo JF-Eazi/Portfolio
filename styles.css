@@ -32,19 +32,7 @@ p.para1pos {
 
 }
 
-p.para2pos {
-    margin: 0;
-    margin-top: 2%;
-     position: absolute;
-        top: 54%;
-        left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 p {
     color: white;
-}
-
-.span-underline {
-    text-decoration: underline;
+    text-align: center;
 }
