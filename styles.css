@@ -1,3 +1,5 @@
+/* -----Divs----- */
+
 .container {
     position: absolute;
         top: 0px;
@@ -10,12 +12,9 @@
 }
 
 .menubar-container {
-    background-color: white;
     margin: 0;
     padding: 0;
-    height: 20px;
-    position: relative;
-        top: 25%;
+    height: 50px;
 }
 
 .menubar1 {
@@ -23,7 +22,6 @@
     width: 50%;
     margin: 0;
     padding: 0;
-    background-color: red;
 }
 
 .menubar2 {
@@ -34,13 +32,12 @@
     width: 50%;
     margin: 0;
     padding: 0;
-    background-color: blue;
 }
 
 #page1_div1 {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 33%;
     text-align: center;
 }
 
@@ -48,10 +45,21 @@
     margin: 0;
 }
 
+#page1_div3 {
+    position: absolute;
+        top: 66%;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    background-color: black;
+}
+
+/* -----Text----- */
+
 h1 {
     margin: 0;
     font-family: MavenPro;
-    font-size: xxx-large;
+    font-size: 80pt;
 }
 
 h2 {
@@ -63,13 +71,43 @@ h2 {
 p {
     margin: 0;
     color: white;
-    font-family: Consolas, sans-serif;
+    font-family: Consolas;
+    font-size: larger;
 }
+
+/* -----Images----- */
+
+#menu-icon {
+    position: absolute;
+        right: 10px;
+    height: 50px;
+}
+
+#menu-icon:hover{
+    animation: rotate90deg 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#magnify-negative {
+    position: absolute;
+    height: 50px;
+    margin: 0;
+}
+
+#magnify-negative:hover {
+    animation: increase-scale 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* -----Aminations----- */
 
 .blink {
     animation: blink 1s;
     animation-iteration-count: infinite;
 }
+
 
 @keyframes blink {
 
@@ -89,12 +127,31 @@ p {
         opacity: 0; }
 }
 
-@font-face {
-    font-family: Consolas;
-    src: "\repos\Portfolio\fonts\consola.ttf";
+@keyframes rotate90deg {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+
 }
+
+@keyframes increase-scale {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(150%);
+    }
+}
+
+/* -----Fonts----- */
 
 @font-face {
     font-family: MavenPro;
-    src: "\repos\Portfolio\fonts\MavenPro.ttf";
+    src: url(/repos/Portfolio/fonts/MavenPro.ttf);
 }
+
