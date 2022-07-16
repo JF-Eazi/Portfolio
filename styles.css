@@ -13,7 +13,7 @@
     background-color: white;
     margin: 0;
     padding: 0;
-    height: 5%;
+    height: 20px;
     position: relative;
         top: 25%;
 }
@@ -50,20 +50,20 @@
 
 h1 {
     margin: 0;
-    font-family: 'Roboto Mono', monospace;
-    font-size:xxx-large;
+    font-family: MavenPro;
+    font-size: xxx-large;
 }
 
 h2 {
     margin: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: monospace;
     font-size: large;
 }
 
 p {
     margin: 0;
     color: white;
-    font-family: Consolas;
+    font-family: Consolas, sans-serif;
 }
 
 .blink {
@@ -91,10 +91,10 @@ p {
 
 @font-face {
     font-family: Consolas;
-    src: "repos\Portfolio\fonts\consola.ttf";
+    src: "\repos\Portfolio\fonts\consola.ttf";
 }
 
 @font-face {
-    font-family: Rubik;
-    src:url(https://fonts.googleapis.com/css2?family=Rubik)
+    font-family: MavenPro;
+    src: "\repos\Portfolio\fonts\MavenPro.ttf";
 }
