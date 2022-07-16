@@ -11,27 +11,10 @@
     background-image: radial-gradient(#1F4690, #3A5BA0);
 }
 
-.menubar-container {
+.menubar{
     margin: 0;
     padding: 0;
     height: 50px;
-}
-
-.menubar1 {
-    height: 100%;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-}
-
-.menubar2 {
-    position: relative;
-        bottom: 100%;
-        left: 50%;
-    height: 100%;
-    width: 50%;
-    margin: 0;
-    padding: 0;
 }
 
 #page1_div1 {
@@ -80,6 +63,7 @@ p {
     position: absolute;
         right: 10px;
     height: 50px;
+    margin: 0%;
 }
 
 #menu-icon:hover{
@@ -90,6 +74,7 @@ p {
 
 #magnify-negative {
     position: absolute;
+        left: 10px;
     height: 50px;
     margin: 0;
 }
