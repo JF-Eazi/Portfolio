@@ -51,7 +51,6 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-    background-color: black;
 }
 
 /* -----Text----- */
@@ -71,7 +70,7 @@ h2 {
 p {
     margin: 0;
     color: white;
-    font-family: Consolas;
+    font-family: Consola-loc;
     font-size: larger;
 }
 
@@ -107,7 +106,6 @@ p {
     animation: blink 1s;
     animation-iteration-count: infinite;
 }
-
 
 @keyframes blink {
 
@@ -153,4 +151,9 @@ p {
 @font-face {
     font-family: MavenPro;
     src: url(fonts/MavenPro.ttf);
+}
+
+@font-face {
+    font-family: Consola-loc;
+    src: url(fonts/consola.ttf);
 }
