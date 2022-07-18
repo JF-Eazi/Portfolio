@@ -19,10 +19,13 @@ body {
 }
 
 .flex-menu {
-    flex-direction: row;
     height: fit-content;
     justify-content: space-between;
     background-color: black;
+}
+
+.flex-menu-sub {
+    justify-content: end;
 }
 
 .flex-main {
@@ -30,6 +33,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.swap-direction{
+    flex-direction: row;
 }
 
 /* -----Text----- */
@@ -53,7 +60,30 @@ p {
     font-size: larger;
 }
 
+.menubar-h {
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.menubar-l {
+    margin: 10px;
+    margin-right: 30px;
+    opacity: 50%;
+}
+
 /* -----Images----- */
+
+/* -----Fonts----- */
+
+@font-face {
+    font-family: MavenPro;
+    src: url(fonts/MavenPro.ttf);
+}
+
+@font-face {
+    font-family: Consola-loc;
+    src: url(fonts/consola.ttf);
+}
 
 /* -----Aminations----- */
 
@@ -78,30 +108,4 @@ p {
 
     100% {
         opacity: 0; }
-}
-
-@keyframes rotate90deg {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(90deg);
-    }
-
-}
-
-}
-
-/* -----Fonts----- */
-
-@font-face {
-    font-family: MavenPro;
-    src: url(fonts/MavenPro.ttf);
-}
-
-@font-face {
-    font-family: Consola-loc;
-    src: url(fonts/consola.ttf);
 }
