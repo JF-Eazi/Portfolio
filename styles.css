@@ -4,11 +4,6 @@ body {
     margin: 0%;
 }
 
-.wrapper {
-    display: block;
-    margin: 0;
-}
-
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -18,7 +13,7 @@ body {
     background-color: #1F4690
 }
 
-.flex-menu {
+.flex-bar {
     height: fit-content;
     justify-content: space-between;
     background-color: black;
@@ -36,14 +31,42 @@ body {
     text-align: center;
 }
 
+.flex-projects {
+    justify-content: space-around;
+}
+
+.projects {
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.relative-move{
+    position: relative;
+        left: 50%;
+        bottom: 100%;
+}
+
 .swap-direction{
     flex-direction: row;
+}
+
+.projects-img {
+    height: 50px;
+    width: 300px;
+    background-color: red;
+    margin: 5px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 /* -----Text----- */
 
 h1 {
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: MavenPro;
     font-size: 80pt;
 }
