@@ -26,6 +26,7 @@ body {
 
 .flex-menu-sub {
     justify-content: end;
+    flex-wrap: wrap;
 }
 
 .flex-main {
