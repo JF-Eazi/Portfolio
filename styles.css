@@ -55,32 +55,6 @@ p {
 
 /* -----Images----- */
 
-#menu-icon {
-    position: absolute;
-        right: 10px;
-    height: 50px;
-    margin: 0%;
-}
-
-#menu-icon:hover{
-    animation: rotate90deg 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#magnify-negative {
-    position: absolute;
-        left: 10px;
-    height: 50px;
-    margin: 0;
-}
-
-#magnify-negative:hover {
-    animation: increase-scale 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
 /* -----Aminations----- */
 
 .blink {
@@ -118,13 +92,6 @@ p {
 
 }
 
-@keyframes increase-scale {
-    0% {
-        transform: scale(100%);
-    }
-    100% {
-        transform: scale(150%);
-    }
 }
 
 /* -----Fonts----- */
