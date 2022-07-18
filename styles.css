@@ -1,39 +1,35 @@
 /* -----Divs----- */
 
-.container {
-    position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-    margin: 0;
-    padding: 0;
-    background-image: radial-gradient(#1F4690, #3A5BA0);
+body {
+    margin: 0%;
 }
 
-.menubar{
+.wrapper {
+    display: block;
     margin: 0;
-    padding: 0;
-    height: 50px;
 }
 
-#page1_div1 {
-    position: absolute;
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
     width: 100%;
-    top: 33%;
+    background-color: #1F4690
+}
+
+.flex-menu {
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.flex-main {
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-#page1_div2 {
-    margin: 0;
-}
-
-#page1_div3 {
-    position: absolute;
-        top: 66%;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
 }
 
 /* -----Text----- */
