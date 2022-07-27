@@ -39,12 +39,15 @@ function Mouse_Down() {
     if (isTrue == true) {
     MainDiv.classList.add("ShrinkDiv");
     DivTwo.classList.add("IncreaseDiv");
-    MainLogo.classList.add("LowerOpacity")
-    Title.classList.add("LowerOpacity")
-    SubTitle.classList.add("LowerOpacity")
+    MainLogo.classList.add("LowerOpacity");
+    Title.classList.add("LowerOpacity");
+    SubTitle.classList.add("LowerOpacity");
 
-    ClickCount ++
-    console.log(isTrue, ClickCount)
+    Title.textContent = "";
+    SubTitle.innerHTML = "";
+
+    ClickCount ++;
+    console.log(isTrue, ClickCount);
 
     }
 
@@ -52,20 +55,24 @@ function Mouse_Down() {
 
     MainDiv.classList.remove("ShrinkDiv");
     DivTwo.classList.remove("IncreaseDiv");
-    MainLogo.classList.remove("LowerOpacity"),
-    Title.classList.remove("LowerOpacity"),
-    SubTitle.classList.remove("LowerOpacity"),
+    MainLogo.classList.remove("LowerOpacity");
+    Title.classList.remove("LowerOpacity");
+    SubTitle.classList.remove("LowerOpacity");
+
+    Title.textContent = "Josh Farrow";
+    SubTitle.innerHTML = "&lt;Web Development & U.I. Design&gt; <span class='blink' id = 'BlinkCollector'>|</span>";
+
 
     MainDiv.classList.add("ShrinkDivRev");
     DivTwo.classList.add("IncreaseDivRev");
-    MainLogo.classList.add("LowerOpacityRev"),
-    Title.classList.add("LowerOpacityRev"),
-    SubTitle.classList.add("LowerOpacityRev"),
+    MainLogo.classList.add("LowerOpacityRev");
+    Title.classList.add("LowerOpacityRev");
+    SubTitle.classList.add("LowerOpacityRev");
 
     setTimeout(() => {
-        MainLogo.classList.remove("LowerOpacityRev"),
-        Title.classList.remove("LowerOpacityRev"),
-        SubTitle.classList.remove("LowerOpacityRev"),
+        MainLogo.classList.remove("LowerOpacityRev");
+        Title.classList.remove("LowerOpacityRev");
+        SubTitle.classList.remove("LowerOpacityRev");
         MainDiv.classList.remove("ShrinkDivRev"),
         DivTwo.classList.remove("IncreaseDivRev")},
         1000)
