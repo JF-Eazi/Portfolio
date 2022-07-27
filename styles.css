@@ -9,23 +9,18 @@ body {
     height: 100vh;
     width: 100vw;
     flex-direction: column;
-}
-
-.flex-content {
-    background-color: grey;
     justify-content: center;
     align-items: center;
-}
-
-.flex-swap-direction {
-    flex-direction: row;
+    background-color: grey;
 }
 
 /* Images */
 
-.icon {
-    height: 50px;
-    margin: 10px;
+
+.LogoMain {
+    width: 200px;
+    height: 200px;
+    margin: 0%;
 }
 
 /* Typeography */
@@ -58,10 +53,6 @@ p {
 Manipulators
 Used to change 1 parameter from parent.
 */
-
-.bg-darkgrey {
-    background-color: darkgrey;
-}
 
 /* Animations */
 
