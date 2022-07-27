@@ -16,14 +16,14 @@ About.addEventListener("mousedown", function() {Mouse_Down()})
 function Mouse_Over() {
     About.style.color = "#000000";
     About.style.opacity = "40%";
-    Icon.src = "./images/icons/arrow-down-circle-black.svg";
+    Icon.src = "/Portfolio/images/icons/arrow-down-circle-black.svg";
     Icon.style.opacity = "40%";
 }
 
 function Mouse_Leave() {
     About.style.color = "";
     About.style.opacity = "";
-    Icon.src = "./images/icons/arrow-down-circle-white.svg";
+    Icon.src = "/Portfolio/images/icons/arrow-down-circle-white.svg";
     Icon.style.opacity = "";
 }
 
