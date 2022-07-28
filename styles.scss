@@ -1,0 +1,153 @@
+$Primary: #6666cc;
+$Secondary: #3d3d99;
+
+.Wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.FlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.FlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.MenuBar {
+    height: 30px;
+    width: 100%;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MainLevelOne {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $Primary;
+
+    .FlexSwap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        height: 15em;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: MavenPro;
+        font-size: 6em;
+        color: black;
+    }
+    
+    p {
+        font-family: Consolas;
+        font-size: 2em;
+        color: white;
+    }
+
+}
+
+.AboutLevelOne {
+
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: $Secondary;
+
+    .AboutLevelTwo {
+        width: 70%;
+        height: 95%;
+
+        margin: 10px;
+
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: $Primary;
+    }
+
+    .AboutLevelThree {
+        width: 95%;
+        height: 15%;
+
+        background-color: $Secondary;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AboutLevelFour{
+        height: 30%;
+        width: 100%;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .AboutLevelFive{
+        height: 70%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .AboutLevelSix{
+        
+        display: flex;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .AboutLevelSeven{
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: left;
+    }
+
+    img{
+        width: 80px;
+        opacity: .7;
+    }
+
+    ul {
+        font-family: Consolas;
+        color: white;
+        margin-left: 35px;
+    }
+
+    h4 {
+        font-family: MavenPro;
+        font-size: 3em;
+
+        margin-left: 20px;
+
+        color: white;
+    }
+
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url(./fonts/consola.ttf);
+}
+
+@font-face {
+    font-family: MavenPro;
+    src: url(./fonts/MavenPro.ttf);
+}

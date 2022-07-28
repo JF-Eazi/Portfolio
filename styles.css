@@ -1,177 +1,123 @@
-/*___________________*/
-/*Variables & Globals*/
-/*__________________*/
-
-:root {
-    --Primary: white;
-    --Secondary: grey;
-    --Tertiary: purple;
-
-    --AboutPageSectionHeight: 80%;
-    --AboutPageSectionWidth: 30%;
-    --AboutPageSectionMinWidth: 400px;
-}
-
-img {
-    margin: 5px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 5px;
-}
-
-ol, ul, li {
-    margin: 10px;
-}
-
-/*______________*/
-/*Container Type*/
-/*______________*/
-
-.FlexColumn {
-    display:flex;
-    flex-direction: Column;
+.Wrapper {
+  height: 100vh;
+  width: 100%;
 }
 
 .FlexRow {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-.GridColumn {
-    display: grid;
-    grid-auto-flow: column;
+.FlexColumn {
+  display: flex;
+  flex-direction: column;
 }
 
-/*_________________*/
-/*Page Positioning*/
-/*________________*/
-
-.MenuBar{
-    height: 5vh;
-    align-items: center;
-    padding-left: 20px;
+.MenuBar {
+  height: 30px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.MainPage {
-
-    height: 95vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-
+.MainLevelOne {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6666cc;
+}
+.MainLevelOne .FlexSwap {
+  display: flex;
+  flex-direction: row;
+}
+.MainLevelOne img {
+  height: 15em;
+}
+.MainLevelOne h1 {
+  text-align: center;
+  font-family: MavenPro;
+  font-size: 6em;
+  color: black;
+}
+.MainLevelOne p {
+  font-family: Consolas;
+  font-size: 2em;
+  color: white;
 }
 
-.AboutPage{
-    height: 95vh;
-    width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+.AboutLevelOne {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d3d99;
+}
+.AboutLevelOne .AboutLevelTwo {
+  width: 70%;
+  height: 95%;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6666cc;
+}
+.AboutLevelOne .AboutLevelThree {
+  width: 95%;
+  height: 15%;
+  background-color: #3d3d99;
+  justify-content: center;
+  align-items: center;
+}
+.AboutLevelOne .AboutLevelFour {
+  height: 30%;
+  width: 100%;
+  align-items: left;
+  justify-content: center;
+}
+.AboutLevelOne .AboutLevelFive {
+  height: 70%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.AboutLevelOne .AboutLevelSix {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.AboutLevelOne .AboutLevelSeven {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: left;
+}
+.AboutLevelOne img {
+  width: 80px;
+  opacity: 0.7;
+}
+.AboutLevelOne ul {
+  font-family: Consolas;
+  color: white;
+  margin-left: 35px;
+}
+.AboutLevelOne h4 {
+  font-family: MavenPro;
+  font-size: 3em;
+  margin-left: 20px;
+  color: white;
 }
 
-.TheProcessPageSection{
-    height: var(--AboutPageSectionHeight);
-    width: var(--AboutPageSectionWidth);
-    min-width: var(--AboutPageSectionMinWidth);
-
-    align-items: center;
-
-    margin-top: 10px;
+@font-face {
+  font-family: Consolas;
+  src: url(./fonts/consola.ttf);
+}
+@font-face {
+  font-family: MavenPro;
+  src: url(./fonts/MavenPro.ttf);
 }
 
-.PortfolioPageSection{
-
-    height: var(--AboutPageSectionHeight);
-    width: var(--AboutPageSectionWidth);
-    min-width: var(--AboutPageSectionMinWidth);
-
-    align-items: center;
-
-    overflow: scroll;
-
-    margin-top: 10px;
-}
-
-.ContactPageSection{
-    height: var(--AboutPageSectionHeight);
-    width: var(--AboutPageSectionWidth);
-    min-width: var(--AboutPageSectionMinWidth);
-
-    align-items: center;
-    
-    margin-top: 10px;
-}
-
-.BlogPage{
-    height: 95vh;
-    width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/*____________*/
-/*Page Styling*/
-/*____________*/
-
-.PageSectionTitle {
-    display: flex;
-
-    width: 95%;
-    height: 70px;
-
-    align-items: center;
-    justify-content: center;
-
-    background-color: grey;
-
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.TheProcessItem {
-    height: 20%;
-    width: 95%;
-    justify-content: left;
-    align-items: center;
-
-    margin-bottom: 20px;
-
-    background-color: gray;
-}
-
-.TheProcessIcon{
-    height: 80px;
-    margin: 10px;
-}
-
-.PortfolioProjectTemp{
-    background-color: gray;
-    height: 200px;
-    width: 200px;
-}
-
-.PortfolioDescriptionTemp{
-    background-color: pink;
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
-}
-
-/*___________*/
-/*Typography*/
-/*__________*/
-
-.HeadText {
-    font-family: MavenPro;
-    color: var(--Primary);
-    text-align: center;
-    font-size: 2em;
-}
-
-.TheProcessListText {
-    font-family: Consolas;
-    color: var(--Primary);
-    margin: 15px;
-}
+/*# sourceMappingURL=styles.css.map */
