@@ -1,261 +1,140 @@
-/* Flexbox */
+/*___________________*/
+/*Variables & Globals*/
+/*__________________*/
 
-body {
-    margin: 0;
-    padding: 0;
+:root {
+    --Primary: black;
+    --Secondary: grey;
+    --Tertiary: purple;
+
+    --AboutPageSectionHeight: 80%;
+    --AboutPageSectionWidth: 30%;
+    --AboutPageSectionMinWidth: 400px;
+
 }
 
-.FlexMain {
+img {
+    margin: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px;
+}
+
+ol, ul, li {
+    margin: 10px;
+}
+
+/*______________*/
+/*Container Type*/
+/*______________*/
+
+.FlexColumn {
+    display:flex;
+    flex-direction: Column;
+}
+
+.FlexRow {
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    overflow: hidden;
+    flex-direction: row;
 }
 
-.FlexContent {
-    height: 100%;
-    background-color: #808080;
+.GridColumn {
+    display: grid;
+    grid-auto-flow: column;
+}
 
+/*____________*/
+/*Page Content*/
+/*____________*/
+
+.MenuBar{
+    height: 5vh;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.MainPage {
+
+    height: 95vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 
-    text-align: center;
 }
 
-.FlexContentTwo {
-    height: 0%;
-    background-color: #a3a3a3;
-
+.AboutPage{
+    height: 95vh;
+    width: 100vw;
     justify-content: space-around;
     align-items: center;
-
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.FlexContentSub {
-    height: 80%;
-    background-color: #808080;
-    width: 30%;
+.TheProcessPageSection{
+    height: var(--AboutPageSectionHeight);
+    width: var(--AboutPageSectionWidth);
+    min-width: var(--AboutPageSectionMinWidth);
 
-    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.PortfolioPageSection{
+
+    height: var(--AboutPageSectionHeight);
+    width: var(--AboutPageSectionWidth);
+    min-width: var(--AboutPageSectionMinWidth);
+
+    align-items: center;
+
+    overflow: scroll;
+
+    margin-top: 10px;
+}
+
+.ContactPageSection{
+    height: var(--AboutPageSectionHeight);
+    width: var(--AboutPageSectionWidth);
+    min-width: var(--AboutPageSectionMinWidth);
+
     align-items: center;
     
-    border: 3px solid #2e2e99;
-
+    margin-top: 10px;
 }
 
-.MenuContainer {
-    height: 3em;
-    background-color: #a3a3a3;
-
-    justify-content: left;
-    flex-direction: row;
+.BlogPage{
+    height: 95vh;
+    width: 100vw;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.FlexDirectionRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+/*____________*/
+/*Page Styling*/
+/*____________*/
+
+.PageSectionTitle {
+    background-color: grey;
+    margin-bottom: 20px;
 }
 
-/* Content */
-
-.ProcessBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: fit-content;
-    text-align: center;
-    background-color: white;
-    width: 80%;
-    margin: 20px;
+.TheProcessItem {
+    background-color: gray;
+    margin-bottom: 20px;
 }
 
-/* Images */
-
-.LogoMain {
+.PortfolioProjectTemp{
+    background-color: gray;
+    height: 200px;
     width: 200px;
+}
+
+.PortfolioDescriptionTemp{
+    background-color: pink;
     height: 200px;
-    margin: 0%;
-}
-
-.IconResize {
-    height: 30px;
-}
-
-.png_Resize {
-    height: 30px;
-    width: 30px;
-}
-
-/* Typeography */
-
-h1 {
-    font-family: MavenPro, sans-serif;
-    font-size: 8em;
-    margin: 0;
-    color: #000000
-}
-
-p {
-    font-family: Consola;
-    font-size: 1.5em;
-    margin-left: 10px;
-    color: #FFFFFF;
-}
-
-h3 {
-    font-size: 4em;
-}
-
-/* Fonts */
-
-@font-face {
-    font-family: MavenPro;
-    src: url(fonts/MavenPro.ttf);
-}
-
-@font-face {
-    font-family: Consola;
-    src: url(fonts/consola.ttf);
-}
-
-/* Animations */
-
-.blink {
-    animation: blink 1s;
-    animation-iteration-count: infinite;
-}
-
-.ShrinkDiv {
-    animation-name: ShrinkDiv;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.ShrinkDivRev {
-    animation-name: ShrinkDivRev;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.IncreaseDiv {
-    animation-name: IncreaseDiv;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.IncreaseDivRev {
-    animation-name: IncreaseDivRev;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.LowerOpacity {
-    animation-name: LowerOpacity;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-}
-
-.LowerOpacityRev {
-    animation-name: LowerOpacityRev;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes blink {
-
-    0% {
-        opacity: 0; }
-
-    49% {
-        opacity: 0; }
-
-    50% {
-        opacity: 1; }
-
-    99% {
-        opacity: 1; }
-
-    100% {
-        opacity: 0; }
- 
-}
-
-@keyframes ShrinkDiv {
-    from{height: 100%}
-    to {height: 0;}
-}
-
-@keyframes IncreaseDiv {
-    from{height: 0}
-    to {height: 100%;}
-}
-
-@keyframes LowerOpacity {
-    from{opacity: 1;}
-    to {opacity: 0;}
-}
-
-@keyframes ShrinkDivRev {
-    from{height: 0}
-    to {height: 100%;}
-}
-
-@keyframes IncreaseDivRev {
-    from{height: 100%}
-    to {height: 0;}
-}
-
-@keyframes LowerOpacityRev {
-    from{opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* JS Query Selectors */
-
-#DivCollector {
-    height: 100%;
-}
-
-
-#DivCollectorTwo {
-    height: 0%;
-}
-
-#About {
-    height: 100%;
-    color: #FFFFFF;
-}
-
-#IconCollector {
-    height: 30px;
-}
-
-#LogoCollector {
-    height: 200px;
-}
-
-#H1Collector {
-    color: black;
-}
-
-#PCollector {
-    color: white;
-}
-
-#Process {
-    height: 80%;
-    flex-direction: column;
-}
-
-#Portfolio {
-    height: 80%;
-}
-
-#Contact {
-    height: 80%;
+    width: 200px;
+    margin-bottom: 20px;
 }
