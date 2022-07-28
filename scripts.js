@@ -110,34 +110,26 @@ function Mouse_Down() {
 }
 
 const PROCESS_HTML = `
+<div class="ProcessBox">
     <h2>The Process</h2>
-    <ol>
-        <li>Define</li>
-            <ul>
-                <li>Customer Requirements</li>
-            </ul>
-        <br>
-        <li>ProtoType</li>
-            <ul>
-                <li>Basic Development</li>
-            </ul>
-        <br>
-        <li>Review</li>
-            <ul>
-                <li>Customer Walkthrough and Feedback</li>
-            </ul>
-        <br>
-        <li>Execute</li>
-            <ul>
-                <li>Deployment Ready Development</li>
-            </ul>
-        <br>
-        <li>Deploy</li>
-            <ul>
-                <li>Customer Handover</li>
-            </ul>
-        <br>
-    </ol>
+    <div class="FlexDirectionRow">
+
+        <div class="">
+            <h3>Define</h3>
+            <img src="/Portfolio/images/icons/define_icon.png" alt="Define Icon" class="png_Resize">
+        </div>
+
+        <ol>
+            <li>Capture Client Requirements. Extensive but fast Questionnaire Process</li>
+            <li>Complete Web Design Documentation.</li>
+        </ol>
+
+    </div>
+</div>
+<div class="ProcessBox">Prototype</div>
+<div class="ProcessBox">Review</div>
+<div class="ProcessBox">Execute</div>
+<div class="ProcessBox">Process</div>
 `
 
 const PORTFOLIO_HTML = `

@@ -54,6 +54,26 @@ body {
     align-items: center;
 }
 
+.FlexDirectionRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content */
+
+.ProcessBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    margin: 20px;
+}
+
 /* Images */
 
 .LogoMain {
@@ -64,7 +84,11 @@ body {
 
 .IconResize {
     height: 30px;
-    margin-left: 10px;
+}
+
+.png_Resize {
+    height: 30px;
+    width: 30px;
 }
 
 /* Typeography */
@@ -81,6 +105,10 @@ p {
     font-size: 1.5em;
     margin-left: 10px;
     color: #FFFFFF;
+}
+
+h3 {
+    font-size: 4em;
 }
 
 /* Fonts */
@@ -221,6 +249,7 @@ p {
 
 #Process {
     height: 80%;
+    flex-direction: column;
 }
 
 #Portfolio {
