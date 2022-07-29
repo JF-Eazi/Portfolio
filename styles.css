@@ -27,88 +27,91 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #6666cc;
+  background-color: #5858ff;
+}
+.MainLevelOne .MainLevelTwo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 30px;
 }
 .MainLevelOne .FlexSwap {
   display: flex;
   flex-direction: row;
 }
 .MainLevelOne img {
+  justify-content: center;
   height: 15em;
 }
 .MainLevelOne h1 {
   text-align: center;
   font-family: MavenPro;
   font-size: 6em;
-  color: black;
+  color: #1212af;
+}
+.MainLevelOne h6 {
+  font-family: MavenPro;
+  font-size: 1em;
+  color: #FFFFFF;
 }
 .MainLevelOne p {
   font-family: Consolas;
   font-size: 2em;
-  color: white;
+  color: #33ff33;
 }
 
 .AboutLevelOne {
+  flex-wrap: wrap;
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #3d3d99;
+  background-color: #1212af;
 }
 .AboutLevelOne .AboutLevelTwo {
-  width: 70%;
-  height: 95%;
+  width: 90%;
+  height: 200px;
   margin: 10px;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #6666cc;
+  justify-content: center;
+  border-bottom: 3px solid #ff8333;
 }
 .AboutLevelOne .AboutLevelThree {
-  width: 95%;
-  height: 15%;
-  background-color: #3d3d99;
-  justify-content: center;
+  width: 10%;
   align-items: center;
+  justify-content: center;
 }
 .AboutLevelOne .AboutLevelFour {
-  height: 30%;
-  width: 100%;
-  align-items: left;
+  height: 100%;
+  width: 25%;
+  align-items: flex-end;
   justify-content: center;
 }
 .AboutLevelOne .AboutLevelFive {
-  height: 70%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.AboutLevelOne .AboutLevelSix {
-  display: flex;
-  width: 30%;
   height: 100%;
-  align-items: center;
+  width: 65%;
+  align-items: flex-start;
   justify-content: center;
 }
-.AboutLevelOne .AboutLevelSeven {
-  display: flex;
-  width: 70%;
-  align-items: center;
-  justify-content: left;
+.AboutLevelOne h1 {
+  font-family: MavenPro;
+  font-size: 5em;
+  color: #ff8333;
+}
+.AboutLevelOne h4 {
+  font-family: MavenPro;
+  font-size: 4em;
+  margin-left: 20px;
+  color: #5858ff;
 }
 .AboutLevelOne img {
-  width: 80px;
+  transform: scale(0.25);
   opacity: 0.7;
 }
 .AboutLevelOne ul {
   font-family: Consolas;
-  color: white;
-  margin-left: 35px;
-}
-.AboutLevelOne h4 {
-  font-family: MavenPro;
-  font-size: 3em;
-  margin-left: 20px;
-  color: white;
+  font-size: 1.5em;
+  color: #33ff33;
+  margin-left: 100px;
 }
 
 @font-face {
