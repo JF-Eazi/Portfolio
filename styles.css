@@ -13,13 +13,6 @@
   flex-direction: column;
 }
 
-.MenuBar {
-  height: 30px;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .MainLevelOne {
   height: 100%;
   width: 100%;
@@ -30,29 +23,30 @@
   background-color: #5858ff;
 }
 .MainLevelOne .MainLevelTwo {
-  display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 30px;
+  flex-wrap: wrap;
+  text-align: left;
 }
 .MainLevelOne .FlexSwap {
   display: flex;
   flex-direction: row;
 }
 .MainLevelOne img {
-  justify-content: center;
   height: 15em;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .MainLevelOne h1 {
-  text-align: center;
   font-family: MavenPro;
   font-size: 6em;
   color: #1212af;
 }
 .MainLevelOne h6 {
   font-family: MavenPro;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #FFFFFF;
+  opacity: 0.5;
 }
 .MainLevelOne p {
   font-family: Consolas;
@@ -60,7 +54,7 @@
   color: #33ff33;
 }
 
-.AboutLevelOne {
+.CycleLevelOne {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
@@ -68,50 +62,139 @@
   align-items: center;
   background-color: #1212af;
 }
-.AboutLevelOne .AboutLevelTwo {
+.CycleLevelOne .CycleLevelTwo {
   width: 90%;
   height: 200px;
   margin: 10px;
   justify-content: center;
   border-bottom: 3px solid #ff8333;
 }
-.AboutLevelOne .AboutLevelThree {
+.CycleLevelOne .CycleLevelThree {
   width: 10%;
   align-items: center;
   justify-content: center;
 }
-.AboutLevelOne .AboutLevelFour {
+.CycleLevelOne .CycleLevelFour {
   height: 100%;
   width: 25%;
   align-items: flex-end;
   justify-content: center;
 }
-.AboutLevelOne .AboutLevelFive {
+.CycleLevelOne .CycleLevelFive {
   height: 100%;
   width: 65%;
   align-items: flex-start;
   justify-content: center;
+}
+.CycleLevelOne h1 {
+  font-family: MavenPro;
+  font-size: 5em;
+  color: #ff8333;
+}
+.CycleLevelOne h4 {
+  font-family: MavenPro;
+  font-size: 4em;
+  margin-left: 20px;
+  color: #5858ff;
+}
+.CycleLevelOne img {
+  transform: scale(0.25);
+  opacity: 0.7;
+}
+.CycleLevelOne ul {
+  font-family: Consolas;
+  font-size: 1.5em;
+  color: #33ff33;
+  margin-left: 100px;
+}
+.CycleLevelOne span {
+  font-family: MavenPro;
+  font-size: 0.5em;
+  opacity: 0.3;
+  color: #5858ff;
+}
+
+.PortfolioLevelOne {
+  height: calc fit-content;
+  width: 100%;
+  background-color: #5858ff;
+}
+.PortfolioLevelOne .PortfolioLevelTwo {
+  height: fit-content;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.PortfolioLevelOne h1 {
+  font-family: MavenPro;
+  font-size: 6em;
+  color: #33ff33;
+  margin-top: 10%;
+}
+.PortfolioLevelOne h2 {
+  font-family: MavenPro;
+  font-size: 4em;
+  color: #1212af;
+  border-bottom: 3px solid #1212af;
+}
+.PortfolioLevelOne span {
+  font-family: MavenPro;
+  font-size: 0.5em;
+  opacity: 0.2;
+  color: #1212af;
+}
+
+.AboutLevelOne {
+  height: fit-content;
+  background-color: #1212af;
+}
+.AboutLevelOne .AboutLevelTwo {
+  margin-top: 30px;
+  justify-content: center;
+}
+.AboutLevelOne .AboutLevelThree {
+  margin: 30px;
 }
 .AboutLevelOne h1 {
   font-family: MavenPro;
   font-size: 5em;
   color: #ff8333;
 }
-.AboutLevelOne h4 {
+.AboutLevelOne h2 {
+  font-family: Consolas;
+  font-size: 2em;
+  color: #33ff33;
+}
+.AboutLevelOne span {
   font-family: MavenPro;
-  font-size: 4em;
-  margin-left: 20px;
+  font-size: 0.5em;
+  opacity: 0.3;
   color: #5858ff;
 }
-.AboutLevelOne img {
-  transform: scale(0.25);
-  opacity: 0.7;
+
+.ContactLevelOne {
+  height: fit-content;
+  background-color: #5858ff;
 }
-.AboutLevelOne ul {
-  font-family: Consolas;
-  font-size: 1.5em;
+.ContactLevelOne .ContactLevelTwo {
+  margin: 30px;
+  justify-content: left;
+}
+.ContactLevelOne h1 {
+  font-family: MavenPro;
+  font-size: 6em;
   color: #33ff33;
-  margin-left: 100px;
+}
+.ContactLevelOne h2 {
+  font-family: Consolas;
+  font-size: 2em;
+  color: #33ff33;
+}
+.ContactLevelOne span {
+  font-family: MavenPro;
+  font-size: 0.5em;
+  opacity: 0.2;
+  color: #1212af;
 }
 
 @font-face {

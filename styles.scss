@@ -20,14 +20,6 @@ $Black: #000000;
     flex-direction: column;
 }
 
-.MenuBar {
-    height: 30px;
-    width: 100%;
-
-    justify-content: space-around;
-    align-items: center;
-}
-
 .MainLevelOne {
     height: 100%;
     width: 100%;
@@ -40,10 +32,11 @@ $Black: #000000;
     background-color: $Primary;
 
     .MainLevelTwo {
-        display: flex;
         align-items: flex-start;
         justify-content: center;
-        margin-right: 30px;
+        flex-wrap: wrap;
+
+        text-align: left;
     }
 
     .FlexSwap {
@@ -52,32 +45,36 @@ $Black: #000000;
     }
 
     img { 
-        justify-content: center;
         height: 15em;
+        margin-left: 30px;
+        margin-top: 30px;
     }
 
     h1 {
-        text-align: center;
         font-family: MavenPro;
         font-size: 6em;
+
         color: $Secondary;
     }
     
     h6 {
         font-family: MavenPro;
-        font-size: 1em;
+        font-size: 1.5em;
+
         color: $White;
+        opacity: .5;
     }
 
     p {
         font-family: Consolas;
         font-size: 2em;
+
         color: $TertiaryTwo;
     }
 
 }
 
-.AboutLevelOne {
+.CycleLevelOne {
 
     flex-wrap: wrap;
 
@@ -89,7 +86,7 @@ $Black: #000000;
 
     background-color: $Secondary;
 
-    .AboutLevelTwo {
+    .CycleLevelTwo {
         width: 90%;
         height: 200px;
 
@@ -101,7 +98,7 @@ $Black: #000000;
 
     }
 
-    .AboutLevelThree {
+    .CycleLevelThree {
         width: 10%;
         
         align-items: center;
@@ -109,7 +106,7 @@ $Black: #000000;
 
     }
 
-    .AboutLevelFour {
+    .CycleLevelFour {
         height: 100%;
         width: 25%;
 
@@ -117,7 +114,7 @@ $Black: #000000;
         justify-content: center;
     }
 
-    .AboutLevelFive {
+    .CycleLevelFive {
         height: 100%;
         width: 65%;
 
@@ -149,6 +146,126 @@ $Black: #000000;
         font-size: 1.5em;
         color: $TertiaryTwo;
         margin-left: 100px;
+    }
+
+    span {
+        font-family: MavenPro;
+        font-size: .5em;
+        opacity: .3;
+        color: $Primary
+    }
+
+}
+
+.PortfolioLevelOne {
+ 
+    height: calc fit-content;
+    width: 100%;
+
+    background-color: $Primary;
+    
+    .PortfolioLevelTwo {
+        height: fit-content;
+        width: 80%;
+
+        margin-left: 10%;
+        margin-bottom: 10%;
+
+    }
+
+    h1 {
+        font-family: MavenPro;
+        font-size: 6em;
+    
+        color: $TertiaryTwo;
+
+        margin-top: 10%
+        ;
+    }
+
+    h2 {
+        font-family: MavenPro;
+        font-size: 4em;
+        color: $Secondary;
+
+        border-bottom: 3px solid $Secondary
+    }
+
+    span {
+        font-family: MavenPro;
+        font-size: .5em;
+        opacity: .2;
+        color: $Secondary
+    }
+    
+
+}
+
+.AboutLevelOne {
+    height: fit-content;
+
+    background-color: $Secondary;
+
+    .AboutLevelTwo {
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .AboutLevelThree {
+        margin: 30px;
+    }
+
+    h1 {
+        font-family: MavenPro;
+        font-size: 5em;
+        color: $Tertiary;
+    }
+
+    h2 {
+        font-family: Consolas;
+        font-size: 2em;
+
+        color: $TertiaryTwo;
+    }
+
+    span {
+        font-family: MavenPro;
+        font-size: .5em;
+        opacity: .3;
+        color: $Primary
+    }
+
+}
+
+.ContactLevelOne {
+    height: fit-content;
+
+    background-color: $Primary;
+
+    .ContactLevelTwo {
+        margin: 30px;
+        justify-content: left;
+    }
+
+    h1 {
+        font-family: MavenPro;
+        font-size: 6em;
+    
+        color: $TertiaryTwo;
+    }
+
+    h2 {
+        font-family: Consolas;
+        font-size: 2em;
+
+        color: $TertiaryTwo;
+    }
+
+    span {
+        font-family: MavenPro;
+        font-size: .5em;
+        opacity: .2;
+        color: $Secondary
     }
 
 }
